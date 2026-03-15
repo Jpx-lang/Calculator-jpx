@@ -1,0 +1,27 @@
+[scanner] ;
+
+print "=== KALKULATOR SEDERHANA ===" ;
+global [a = scanner.number("Angka pertama")] ;
+global [b = scanner.number("Angka kedua")] ;
+global [op = scanner.text("Operator (+, -, *, /)")] ;
+global [hasil = 0] ;
+
+if op = "+" {
+    hasil = a + b ;
+    print "Hasil: " + a + " + " + b + " = " + hasil ;
+} ;
+
+if op = "-" {
+    hasil = a - b ;
+    print "Hasil: " + a + " - " + b + " = " + hasil ;
+} ;
+
+if op = "*" {
+    hasil = a * b ;
+    print "Hasil: " + a + " * " + b + " = " + hasil ;
+} ;
+
+if op = "/" {
+    hasil = a / b ;
+    print "Hasil: " + a + " / " + b + " = " + hasil ;
+} ;
